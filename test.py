@@ -1,6 +1,6 @@
 from mercapy import Mercapy
 
-ticket = "2C9F8A33-10E9-4F37-9ED8-E282FB355A39"
+ticket = "F8537A18-6766-4DEF-9E59-426B4FEE2844"
 mercapi = Mercapy(ticket=ticket)
 
 fecha = "05062023"
