@@ -38,6 +38,12 @@ class Tenders(BaseApi):
 
         return self.get_result(url, params)
 
+    def get_url_by_code(self, *, tender_code):
+
+        web_tender_url = f"http://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion={tender_code}"
+
+        return web_tender_url
+
     """
     def get(
         self, *, date="", state="", tender_code="", public_org_code="", provider_code=""
