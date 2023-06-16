@@ -4,6 +4,13 @@ from .base_api import BaseApi
 class Tenders(BaseApi):
     """
     Ref: https://api.mercadopublico.cl/modules/ejemplo_10.aspx
+
+    Listar Licitaciones diarias
+    Listar Licitaciones por código
+    Listar Licitaciones diarias por estado
+    Listar Licitaciones por día
+    Listar Licitaciones por estado y día
+    Listar Licitaciones por código de organismo público o proveedor
     """
 
     def _build_url(self):
