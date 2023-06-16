@@ -21,10 +21,24 @@ class Tenders(BaseApi):
 
         return self.get_result(url, params)
 
-    def get_by_code(self, *, tender_code):
+    def get_by_tender_code(self, *, tender_code):
         url = self._build_url()
 
         params = {"codigo": tender_code}
+
+        return self.get_result(url, params)
+
+    def get_by_public_org_code(self, *, public_org_code):
+        url = self._build_url()
+
+        params = {"CodigoOrganismo": public_org_code}
+
+        return self.get_result(url, params)
+
+    def get_by_provider_code(self, *, provider_code):
+        url = self._build_url()
+
+        params = {"CodigoProveedor": provider_code}
 
         return self.get_result(url, params)
 
