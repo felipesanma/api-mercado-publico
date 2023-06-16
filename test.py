@@ -14,3 +14,4 @@ tender_code_sample = tender_sample["CodigoExterno"]
 tender_web_url = mercapi.tenders.get_url_by_code(tender_code=tender_code_sample)
 """
 print(mercapi.searchCodes.get_public_org())
+print(mercapi.purchase._build_url())
