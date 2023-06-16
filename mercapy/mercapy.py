@@ -3,7 +3,7 @@ from telnetlib import SE
 
 import requests
 
-from .modules import SearchCodes, Tenders
+from .modules import PurchaseOrders, SearchCodes, Tenders
 
 DEFAULT_TIMEOUT = 5
 
@@ -23,7 +23,7 @@ class Mercapy:
         cfg = config(ticket, session, timeout)
         self.tenders = Tenders(cfg)
         self.searchCodes = SearchCodes(cfg)
-        # self.purchase = PurchaseOrders(cfg)
+        self.purchase = PurchaseOrders(cfg)
 
     def _init_session(self, session):
         """
